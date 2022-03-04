@@ -1,2 +1,29 @@
-# ford_sf_bikeshare_analysis
-In this Data Exploration, we will examine individual rides made in a bike-sharing system covering the greater San Francisco Bay area. The analysis was done with the numpy, pandas, matplotlib , and seaborn libraries.
+# Diamonds Data Exploration
+
+## Dataset
+
+The data consists of information regarding 54,000 round-cut diamonds, including
+price, carat, and other diamond qualities. The dataset can be found in the
+repository for R's ggplot2 library [here](https://github.com/tidyverse/ggplot2/blob/master/data-raw/diamonds.csv),
+with feature documentation available [here](https://github.com/chiyounglee01/ford_sf_bikeshare_analysis).
+
+
+## Summary of Findings
+
+In the exploration, I found that there was a strong relationship between the
+price of a diamond and its carat weight, with modifying effects from the cut,
+color, and clarity grades given to the diamond. The relationship is
+approximately linear between price and carat when price is transformed to be on
+a logarithmic scale and carat transformed to be on a cube-root scale. I found a
+somewhat surprising result initially when the marginal trend for the cut, color,
+and clarity variables indicated that higher diamond quality was associated with
+lower price. However, higher diamond quality was also associated with smaller
+diamonds. When I isolated diamonds of a single carat weight, there was a clear
+positive relationship between higher diamond quality and higher diamond price.
+
+Outside of the main variables of interest, I verified the relationship between
+diamond carat weight and its x, y, and z dimensions. For the dataset given,
+there was an interesting interaction in the categorical diamond quality
+features. The lower clarity grades looked like they had slightly better
+distribution of cut and color grades than diamonds with the higher clarity
+grades.
